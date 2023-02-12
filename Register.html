@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="Style.css" rel="stylesheet">
+    <title>Document</title>
+   
+</head>
+
+<body>
+    <div class="Register-box">
+        <button class="login" onclick="OpenLogin()">Login Now</button>
+        <button class="Sign" onclick="OpenRegister()">Register Now</button>
+
+    </div>
+    <div class="Login-box">
+        <form action="">
+            <div id="Container">
+                <button onclick='LoginHide()' class="cross1"><img src='./Image/Icon.png' alt="" /></button><br>
+
+                <label>Email</label><br>
+                <input type="email" placeholder="Enter Email" name="uname" /><br>
+                <label>Password</label><br>
+                <input type="password" placeholder="Enter Password" name="pwd" /><br>
+                <label> <input type="checkbox" />Remember Me</label><br><br>
+                <input class="submit-btn" type="button" value="Submit" /><br><br>
+                <label class="Forgot-label"><input class="forgot-btn" onclick="Forgotbox()" type="button" />Forgot
+                    Password ?</label>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="Sign-box">
+        <form action="">
+            <div id="Container-2">
+                <button onclick='RegisterHide()' class="cross2"> <img src='./Image/Icon.png' alt="" /></button><br>
+
+                <label>Full Name</label><br>
+                <input type="text" placeholder="Enter Name" name="uname" /><br>
+                <label>Contact Number</label><br>
+                <input type="number" placeholder="Enter Mobile Number" name="mbnumber" /><br>
+                <label>Email</label><br>
+                <input type="email" placeholder="Enter Email" name="uname" /><br>
+                <label>Password</label><br>
+                <input type="password" placeholder="Create Password" name="pwd" /><br>
+                <label>Gender</label><br>
+                <input type="text" placeholder="Gender" list="Field-data" name="pwd" /><br>
+                <datalist id="Field-data">
+                    <option value="Male">
+                    <option value="Female"></option>
+                    <option value="Transgender"></option>
+
+                </datalist>
+                <label for="files">Date Of Birth</label>
+                <input type="date" name="date" /><br>
+                <label for="files">Upload Your Passport Size Picture</label>
+                <input type="file" id="files" name="files" multiple><br><br>
+                <input class="submit-btn" type="button" value="Submit" />
+            </div>
+
+        </form>
+
+    </div>
+    <div class="Forgot-box">
+        <form action="">
+            <div id="Container-3">
+                <button onclick='ForgotHide()' class="cross3"><img src='./Image/Icon.png' alt="" /></button><br>
+
+                <label>Email</label><br>
+                <input type="email" placeholder="Enter Email" /><br>
+                <input class="submit-btn" type="button" value="Submit" />
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
+<script src="./Script.js"></script>
