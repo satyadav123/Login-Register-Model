@@ -20,7 +20,7 @@
     function LoginHide(e) {
         var Box1 = document.getElementsByClassName('Login-box');
         //console.log(Box1)
-        Box1[0].style.display = 'none'
+        Box1[0].style.display = 'none';
     }
     function RegisterHide(e) {
         var Box2 = document.getElementsByClassName('Sign-box');
